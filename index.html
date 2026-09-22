@@ -34,7 +34,7 @@
       min-height: 297mm;
       margin: 16px auto;
       background: var(--paper);
-      padding: 13mm 14mm 12mm;
+      padding: 11mm 13mm 10mm;
       box-shadow: 0 8px 28px rgba(20, 32, 51, 0.12);
     }
 
@@ -44,8 +44,8 @@
       gap: 16px;
       align-items: end;
       border-bottom: 3px solid var(--accent);
-      padding-bottom: 12px;
-      margin-bottom: 14px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
     }
 
     h1 {
@@ -84,7 +84,7 @@
       color: var(--accent);
       border-bottom: 1px solid var(--line);
       padding-bottom: 3px;
-      margin: 11px 0 7px;
+      margin: 9px 0 6px;
     }
 
     .sidebar h2:first-child,
@@ -100,18 +100,23 @@
       padding: 2px 7px;
       font-size: 8.4pt;
     }
+    .chip-next {
+      background: var(--accent-soft);
+      border-style: dashed;
+      border-color: var(--accent);
+    }
 
-    .skill-group { margin-bottom: 8px; }
+    .skill-group { margin-bottom: 6px; }
     .skill-group strong {
       display: block;
       font-size: 9pt;
       margin-bottom: 3px;
     }
 
-    .lang { margin-bottom: 6px; font-size: 9.4pt; }
+    .lang { margin-bottom: 3px; font-size: 9.4pt; }
     .lang span { color: var(--muted); }
 
-    .item { margin-bottom: 9px; }
+    .item { margin-bottom: 7px; }
     .item-head {
       display: flex;
       justify-content: space-between;
@@ -154,7 +159,7 @@
 
     @page {
       size: A4;
-      margin: 10mm 12mm 10mm;
+      margin: 9mm 11mm 9mm;
     }
   </style>
 </head>
@@ -184,6 +189,8 @@
             <span class="chip">JavaScript</span>
             <span class="chip">Go</span>
             <span class="chip">Python</span>
+            <span class="chip">C</span>
+            <span class="chip">Bash</span>
             <span class="chip">SQL</span>
             <span class="chip">HTML/CSS</span>
           </div>
@@ -202,6 +209,7 @@
             <span class="chip">Node.js</span>
             <span class="chip">Express</span>
             <span class="chip">REST APIs</span>
+            <span class="chip">Socket.IO</span>
             <span class="chip">PostgreSQL</span>
             <span class="chip">Prisma</span>
             <span class="chip">MongoDB</span>
@@ -212,10 +220,25 @@
           <div class="chips">
             <span class="chip">Git</span>
             <span class="chip">Docker</span>
-            <span class="chip">GitHub Actions</span>
             <span class="chip">Linux/Unix</span>
-            <span class="chip">CI/CD</span>
             <span class="chip">Vagrant</span>
+            <span class="chip">Make</span>
+            <span class="chip">Nginx</span>
+            <span class="chip">GitHub Actions</span>
+            <span class="chip">CI/CD</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <strong>Learning next — DevOps</strong>
+          <div class="chips">
+            <span class="chip chip-next">Kubernetes</span>
+            <span class="chip chip-next">Helm</span>
+            <span class="chip chip-next">ArgoCD</span>
+            <span class="chip chip-next">Terraform</span>
+            <span class="chip chip-next">Prometheus</span>
+            <span class="chip chip-next">Grafana</span>
+            <span class="chip chip-next">ELK</span>
+            <span class="chip chip-next">GitOps</span>
           </div>
         </div>
         <div class="skill-group">
@@ -236,31 +259,27 @@
         <h2>Education</h2>
         <div class="item">
           <h3>kood/Sisu</h3>
-          <div class="meta">Helsinki · Software development programme</div>
-          <div class="dates">2025 – Jan 2027</div>
-          <p>24-month intensive, project-driven programme covering full-stack development, APIs, databases, testing, DevOps, and generative AI.</p>
+          <div class="meta">Helsinki · 2025 – Jan 2027</div>
+          <p>DevOps module in progress.</p>
         </div>
         <div class="item">
           <h3>Piscine Helsinki</h3>
-          <div class="meta">Hive-style intensive coding selection</div>
-          <p>Four-week full-time piscine in C, collaboration, and problem-solving.</p>
+          <div class="meta">Four-week intensive in C</div>
         </div>
         <div class="item">
           <h3>Software Development Academy</h3>
-          <div class="meta">Helsinki</div>
-          <div class="dates">2020</div>
+          <div class="meta">Helsinki · 2020</div>
         </div>
         <div class="item">
           <h3>University of Rajasthan</h3>
-          <div class="meta">Bachelor of Arts · India</div>
-          <div class="dates">2013</div>
+          <div class="meta">Bachelor of Arts · India · 2013</div>
         </div>
       </aside>
 
       <section class="main">
         <h2>Profile</h2>
         <p class="profile">
-          Full-stack developer completing kood/Sisu’s 24-month software programme in Helsinki, with graduation in January 2027. I build end-to-end web applications — from requirements and design through implementation, testing, and deployment. Recent work focuses on TypeScript, React/Next.js, PostgreSQL, Docker, CI/CD, and practical generative AI. Earlier career in sales and insurance taught me to understand customer needs, communicate with different stakeholders, and take ownership of results.
+          Full-stack developer completing kood/Sisu’s 24-month software programme in Helsinki, graduating January 2027. I build end-to-end web applications — from design through testing and deployment. Recent work: TypeScript, React/Next.js, PostgreSQL, Docker, Linux servers, CI/CD, and generative AI. Currently in the DevOps module (CI/CD in progress; Kubernetes, GitOps, and Terraform next). Earlier sales and insurance work taught me to understand customer needs and take ownership of results.
         </p>
 
         <h2>Selected projects</h2>
