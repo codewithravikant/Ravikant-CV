@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ravikant Pandit — CV</title>
+  <style>
+    :root {
+      --ink: #142033;
+      --muted: #4b5568;
+      --line: #d7dee8;
+      --accent: #0e5c66;
+      --accent-soft: #e8f3f4;
+      --chip: #f3f6f8;
+      --paper: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { background: #e8edf3; }
+
+    body {
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.38;
+      font-size: 10.2pt;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 16px auto;
+      background: var(--paper);
+      padding: 13mm 14mm 12mm;
+      box-shadow: 0 8px 28px rgba(20, 32, 51, 0.12);
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: end;
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 26pt;
+      font-weight: 750;
+      letter-spacing: -0.4px;
+      line-height: 1.05;
+    }
+
+    .title {
+      margin-top: 4px;
+      color: var(--accent);
+      font-size: 12pt;
+      font-weight: 650;
+    }
+
+    .contact {
+      text-align: right;
+      font-size: 9pt;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .contact a { color: var(--ink); }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 58mm 1fr;
+      gap: 16px;
+    }
+
+    h2 {
+      font-size: 9pt;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 3px;
+      margin: 11px 0 7px;
+    }
+
+    .sidebar h2:first-child,
+    .main h2:first-child { margin-top: 0; }
+
+    .profile { color: var(--ink); }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .chip {
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      padding: 2px 7px;
+      font-size: 8.4pt;
+    }
+
+    .skill-group { margin-bottom: 8px; }
+    .skill-group strong {
+      display: block;
+      font-size: 9pt;
+      margin-bottom: 3px;
+    }
+
+    .lang { margin-bottom: 6px; font-size: 9.4pt; }
+    .lang span { color: var(--muted); }
+
+    .item { margin-bottom: 9px; }
+    .item-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: baseline;
+    }
+    .item h3 { font-size: 10.6pt; font-weight: 700; }
+    .meta { color: var(--muted); font-size: 9pt; }
+    .dates {
+      white-space: nowrap;
+      color: var(--muted);
+      font-size: 9pt;
+      font-weight: 600;
+    }
+    .item p, .item li { font-size: 9.6pt; }
+    .item p { margin-top: 2px; color: var(--ink); }
+    ul { padding-left: 15px; margin-top: 3px; }
+    li { margin-bottom: 2px; }
+
+    .links { font-size: 8.6pt; color: var(--muted); margin-top: 2px; }
+
+    footer {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 8pt;
+    }
+
+    @media print {
+      html, body { background: white; }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        min-height: auto;
+        padding: 0;
+        width: auto;
+      }
+      a { color: var(--ink); }
+      .no-print { display: none !important; }
+    }
+
+    @page {
+      size: A4;
+      margin: 10mm 12mm 10mm;
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <header>
+      <div>
+        <h1>Ravikant Pandit</h1>
+        <div class="title">Full-stack Developer</div>
+      </div>
+      <div class="contact">
+        Helsinki, Finland<br />
+        <a href="tel:+358449244754">+358 44 924 4754</a><br />
+        <a href="mailto:ravikantpandit1985@gmail.com">ravikantpandit1985@gmail.com</a><br />
+        <a href="https://github.com/codewithravikant">github.com/codewithravikant</a><br />
+        <a href="https://www.linkedin.com/in/ravikant-pandit/">linkedin.com/in/ravikant-pandit</a>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>Skills</h2>
+        <div class="skill-group">
+          <strong>Languages</strong>
+          <div class="chips">
+            <span class="chip">TypeScript</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Go</span>
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <strong>Frontend</strong>
+          <div class="chips">
+            <span class="chip">React</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <strong>Backend &amp; data</strong>
+          <div class="chips">
+            <span class="chip">Node.js</span>
+            <span class="chip">Express</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Prisma</span>
+            <span class="chip">MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <strong>DevOps</strong>
+          <div class="chips">
+            <span class="chip">Git</span>
+            <span class="chip">Docker</span>
+            <span class="chip">GitHub Actions</span>
+            <span class="chip">Linux/Unix</span>
+            <span class="chip">CI/CD</span>
+            <span class="chip">Vagrant</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <strong>AI</strong>
+          <div class="chips">
+            <span class="chip">Prompt design</span>
+            <span class="chip">Function calling</span>
+            <span class="chip">RAG</span>
+            <span class="chip">pgvector</span>
+          </div>
+        </div>
+
+        <h2>Languages</h2>
+        <div class="lang"><strong>English</strong> — fluent</div>
+        <div class="lang"><strong>Finnish</strong> — A2, studying</div>
+        <div class="lang"><strong>Hindi</strong> — native</div>
+
+        <h2>Education</h2>
+        <div class="item">
+          <h3>kood/Sisu</h3>
+          <div class="meta">Helsinki · Software development programme</div>
+          <div class="dates">2025 – Jan 2027</div>
+          <p>24-month intensive, project-driven programme covering full-stack development, APIs, databases, testing, DevOps, and generative AI.</p>
+        </div>
+        <div class="item">
+          <h3>Piscine Helsinki</h3>
+          <div class="meta">Hive-style intensive coding selection</div>
+          <p>Four-week full-time piscine in C, collaboration, and problem-solving.</p>
+        </div>
+        <div class="item">
+          <h3>Software Development Academy</h3>
+          <div class="meta">Helsinki</div>
+          <div class="dates">2020</div>
+        </div>
+        <div class="item">
+          <h3>University of Rajasthan</h3>
+          <div class="meta">Bachelor of Arts · India</div>
+          <div class="dates">2013</div>
+        </div>
+      </aside>
+
+      <section class="main">
+        <h2>Profile</h2>
+        <p class="profile">
+          Full-stack developer completing kood/Sisu’s 24-month software programme in Helsinki, with graduation in January 2027. I build end-to-end web applications — from requirements and design through implementation, testing, and deployment. Recent work focuses on TypeScript, React/Next.js, PostgreSQL, Docker, CI/CD, and practical generative AI. Earlier career in sales and insurance taught me to understand customer needs, communicate with different stakeholders, and take ownership of results.
+        </p>
+
+        <h2>Selected projects</h2>
+        <div class="item">
+          <div class="item-head">
+            <h3>FitNexus — AI wellness platform</h3>
+            <span class="dates">TypeScript · Next.js</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/codewithravikant/chat-assistant">github.com/codewithravikant/chat-assistant</a>
+          </div>
+          <ul>
+            <li>Built a full-stack wellness app with Next.js, React, TypeScript, PostgreSQL, and Prisma, including an AI coach with function calling, prompt verification, and RAG over recipes with pgvector.</li>
+            <li>Added email/password login, GitHub/Google OAuth, TOTP 2FA, field encryption, Docker, GitHub Actions CI, 200+ unit tests, and Playwright E2E tests.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-head">
+            <h3>Bastion Lab — Linux server lab</h3>
+            <span class="dates">Linux · Vagrant · Docker</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/codewithravikant/vm-infra">github.com/codewithravikant/vm-infra</a>
+          </div>
+          <ul>
+            <li>Automated a four-VM Ubuntu lab with Vagrant and Make: SSH key-only access, UFW, unattended upgrades, and a dashboard for VM control.</li>
+            <li>Added review tests plus optional Fail2Ban, WireGuard, and Netdata; documented architecture, networking, and security decisions.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-head">
+            <h3>Multiplayer Snake — real-time game</h3>
+            <span class="dates">Node.js · Socket.IO</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/codewithravikant/Snake-multi-player">github.com/codewithravikant/Snake-multi-player</a>
+            · <a href="https://snake-bite.up.railway.app/">live demo</a>
+          </div>
+          <ul>
+            <li>Built a 2–4 player real-time game with a server-authoritative Socket.IO backend, client-side interpolation, NPC mode, chat, and accessibility options.</li>
+            <li>Deployed to Railway; used vanilla JavaScript on the client for 60 FPS DOM rendering.</li>
+          </ul>
+        </div>
+
+        <p class="meta" style="margin-bottom:10px;">
+          Additional kood/Sisu coursework lives in a private Gitea instance and can be shared on request.
+        </p>
+
+        <h2>Experience</h2>
+        <div class="item">
+          <div class="item-head">
+            <h3>Senior Business Manager</h3>
+            <span class="dates">Nov 2017 – Aug 2018</span>
+          </div>
+          <div class="meta">Bharti AXA Life Insurance</div>
+          <ul>
+            <li>Led planning and task coordination for a 15-person team, and identified opportunities for business development.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <h3>Agency Development Manager</h3>
+            <span class="dates">Mar 2016 – Dec 2016</span>
+          </div>
+          <div class="meta">IFFCO Tokio General Insurance</div>
+          <ul>
+            <li>Recruited and supported agents, and generated business through professional networks.</li>
+          </ul>
+        </div>
+        <p class="meta">
+          Earlier sales and insurance roles in India. Relocated to Finland and retrained as a software developer.
+        </p>
+      </section>
+    </div>
+  </article>
+</body>
+</html>
