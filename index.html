@@ -168,7 +168,7 @@
     <header>
       <div>
         <h1>Ravikant Pandit</h1>
-        <div class="title">Full-stack Developer</div>
+        <div class="title">Full-stack Developer · DevOps</div>
       </div>
       <div class="contact">
         Helsinki, Finland<br />
@@ -218,18 +218,22 @@
         <div class="skill-group">
           <strong>DevOps</strong>
           <div class="chips">
-            <span class="chip">Git</span>
-            <span class="chip">Docker</span>
             <span class="chip">Linux/Unix</span>
+            <span class="chip">Docker</span>
             <span class="chip">Vagrant</span>
-            <span class="chip">Make</span>
-            <span class="chip">Nginx</span>
-            <span class="chip">GitHub Actions</span>
+            <span class="chip">Ansible</span>
+            <span class="chip">Jenkins</span>
             <span class="chip">CI/CD</span>
+            <span class="chip">GitHub Actions</span>
+            <span class="chip">Nginx</span>
+            <span class="chip">Make</span>
+            <span class="chip">Git</span>
+            <span class="chip">SSH / UFW</span>
+            <span class="chip">Trivy</span>
           </div>
         </div>
         <div class="skill-group">
-          <strong>Learning next — DevOps</strong>
+          <strong>Continuing — DevOps</strong>
           <div class="chips">
             <span class="chip chip-next">Kubernetes</span>
             <span class="chip chip-next">Helm</span>
@@ -260,7 +264,7 @@
         <div class="item">
           <h3>kood/Sisu</h3>
           <div class="meta">Helsinki · 2025 – Jan 2027</div>
-          <p>DevOps module in progress.</p>
+          <p>Generative AI completed; DevOps module in progress.</p>
         </div>
         <div class="item">
           <h3>Piscine Helsinki</h3>
@@ -279,10 +283,24 @@
       <section class="main">
         <h2>Profile</h2>
         <p class="profile">
-          Full-stack developer completing kood/Sisu’s 24-month software programme in Helsinki, graduating January 2027. I build end-to-end web applications — from design through testing and deployment. Recent work: TypeScript, React/Next.js, PostgreSQL, Docker, Linux servers, CI/CD, and generative AI. Currently in the DevOps module (CI/CD in progress; Kubernetes, GitOps, and Terraform next). Earlier sales and insurance work taught me to understand customer needs and take ownership of results.
+          Full-stack developer completing kood/Sisu’s 24-month software programme in Helsinki, graduating January 2027. I build end-to-end web applications — from design through testing and deployment. After completing the generative AI track (FitNexus: RAG, function calling, OAuth/2FA), I am continuing with DevOps: multi-VM labs, Ansible, Jenkins CI/CD, Docker, Linux hardening, and load balancing. Next: Kubernetes, GitOps, and Terraform. Earlier sales and insurance work taught me to understand customer needs and take ownership of results.
         </p>
 
         <h2>Selected projects</h2>
+        <div class="item">
+          <div class="item-head">
+            <h3>Automation-VMs — multi-VM DevOps lab</h3>
+            <span class="dates">Ansible · Jenkins · Docker</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/codewithravikant/Automation-vms">github.com/codewithravikant/Automation-vms</a>
+          </div>
+          <ul>
+            <li>Built a six-VM Ubuntu lab (load balancer, web, app, backup, CI/CD) with Vagrant, Make, and idempotent Ansible: SSH hardening, UFW, Docker, nginx LB, and automated backups/restore.</li>
+            <li>Ran Jenkins CI/CD with a local registry: lint, audit, Trivy scans, deploy, rollback, and optional Slack alerts; shipped a containerized React/Express diagnostics app behind the LB.</li>
+          </ul>
+        </div>
+
         <div class="item">
           <div class="item-head">
             <h3>FitNexus — AI wellness platform</h3>
@@ -294,20 +312,6 @@
           <ul>
             <li>Built a full-stack wellness app with Next.js, React, TypeScript, PostgreSQL, and Prisma, including an AI coach with function calling, prompt verification, and RAG over recipes with pgvector.</li>
             <li>Added email/password login, GitHub/Google OAuth, TOTP 2FA, field encryption, Docker, GitHub Actions CI, 200+ unit tests, and Playwright E2E tests.</li>
-          </ul>
-        </div>
-
-        <div class="item">
-          <div class="item-head">
-            <h3>Bastion Lab — Linux server lab</h3>
-            <span class="dates">Linux · Vagrant · Docker</span>
-          </div>
-          <div class="links">
-            <a href="https://github.com/codewithravikant/vm-infra">github.com/codewithravikant/vm-infra</a>
-          </div>
-          <ul>
-            <li>Automated a four-VM Ubuntu lab with Vagrant and Make: SSH key-only access, UFW, unattended upgrades, and a dashboard for VM control.</li>
-            <li>Added review tests plus optional Fail2Ban, WireGuard, and Netdata; documented architecture, networking, and security decisions.</li>
           </ul>
         </div>
 
